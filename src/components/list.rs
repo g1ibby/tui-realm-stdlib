@@ -292,7 +292,7 @@ impl MockComponent for List {
                 .get(Attribute::HighlightedStr)
                 .map(|x| x.unwrap_string());
             if let Some(hg_str) = &self.hg_str {
-                list = list.highlight_symbol(hg_str);
+                list = list.highlight_symbol(hg_str.as_str());
             }
             if self.scrollable() {
                 let mut state: ListState = ListState::default();

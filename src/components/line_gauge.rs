@@ -169,7 +169,8 @@ impl MockComponent for LineGauge {
                             .bg(background)
                             .add_modifier(modifiers),
                     )
-                    .line_set(self.line_set())
+                    .filled_symbol(self.line_set().horizontal)
+                    .unfilled_symbol(self.line_set().horizontal)
                     .label(label)
                     .ratio(percentage),
                 area,

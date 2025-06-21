@@ -274,7 +274,7 @@ impl Select {
             .get(Attribute::HighlightedStr)
             .map(|x| x.unwrap_string());
         if let Some(hg_str) = &self.hg_str {
-            list = list.highlight_symbol(hg_str);
+            list = list.highlight_symbol(hg_str.as_str());
         }
         let mut state: ListState = ListState::default();
         state.select(Some(self.states.selected));
