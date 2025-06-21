@@ -16,7 +16,7 @@ rust-version = "1.85.1"
 
 [dependencies]
 textwrap = "^0.16"
-tuirealm = { version = "3", default-features = false, features = ["derive"] }
+tuirealm = { git = "https://github.com/g1ibby/tui-realm", branch = "feat/terminal-options-support", default-features = false, features = ["derive"]}
 unicode-width = "^0.2"
 
 [dev-dependencies]
