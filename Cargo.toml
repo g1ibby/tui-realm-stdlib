@@ -23,7 +23,7 @@ unicode-width = "^0.2"
 crossterm = "^0.29"
 pretty_assertions = "1"
 rand = "0.9"
-tuirealm = { version = "3", default-features = false }
+tuirealm = { git = "https://github.com/g1ibby/tui-realm", branch = "feat/terminal-options-support", default-features = false }
 
 [features]
 default = ["crossterm"]
